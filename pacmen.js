@@ -30,8 +30,8 @@ function makePac() {
   newimg.style.position = "absolute";
   newimg.src = pacArray[direction][focus];
   newimg.width = Math.random()*200;
-  newimg.style.left = (position.x + Math.random()*200)+"px";
-  newimg.style.top = (position.y + Math.random()*100)+"px";
+  newimg.style.left = (position.x + Math.random()*pageWidth*0.75)+"px";
+  newimg.style.top = (position.y + Math.random()*window.innerHeight*0.5)+"px";
   game.appendChild(newimg);
   
   return {
